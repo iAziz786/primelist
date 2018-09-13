@@ -2,7 +2,8 @@ package primelist
 
 import "math"
 
-func primelist(size int) []int {
+// Generate returns a list of prime number within the given size
+func Generate(size int) []int {
 	primes := make([]bool, size)
 
 	for i := range primes {
@@ -26,6 +27,6 @@ func primelist(size int) []int {
 			arrayOfPrimes = append(arrayOfPrimes, i)
 		}
 	}
-	
+
 	return arrayOfPrimes
 }
